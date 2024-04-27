@@ -1,9 +1,11 @@
 ---
-title: Choosing a Cutting Tool: Material Guide
+title: Choosing a Cutting Tool Cutting Tool Material Guide
 layout: home
+nav_order: 1
+parent: Choosing a Cutting Tool
 ---
 
-# Choosing a Cutting Tool: Material Guide
+# Choosing a Cutting Tool: Cutting Tool Material Guide
 
 Welcome to our in-depth guide on the materials used for various cutting tools, designed for both novice and experienced machinists. Cutting tools are essential in various machining applications, including milling machines, drilling operations, and lathes. This guide explores the different materials used in the manufacturing of endmills, drills, and other cutting instruments, highlighting their properties, applications, and optimal use scenarios.
 
@@ -192,6 +194,8 @@ This material is a composite of carbon and tungsten, forming a highly resistant 
 
 - Recycling Used Tools: Explore recycling options for carbide and other metals to minimize environmental impact.
     - **Carbide is a limited resource with mining implications, please recycle broken and worn tooling.**
+> {: .new  }
+>TCM Provides carbide recycling in exchange for store credit!
 - Reducing Waste: Opt for resharpenable tool materials when possible to extend tool life and reduce waste.
 
 ## Conclusion

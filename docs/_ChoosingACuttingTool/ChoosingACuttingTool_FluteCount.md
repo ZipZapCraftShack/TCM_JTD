@@ -1,6 +1,8 @@
 ---
-title: Choosing a Cutting Tool: Flute Count Guide
+title: Choosing a Cutting Tool Flute Count Guide
 layout: home
+nav_order: 3
+parent: Choosing a Cutting Tool
 ---
 
 # Choosing a Cutting Tool: Flute Count Guide
