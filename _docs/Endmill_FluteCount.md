@@ -1,9 +1,9 @@
 ---
-title: Endmill Flute Count Guide
+title: Choosing a Cutting Tool: Flute Count Guide
 layout: home
 ---
 
-# Flute Count Guide
+# Choosing a Cutting Tool: Flute Count Guide
 
 Welcome to our detailed guide on choosing the right flute count for endmills, designed to assist both novice and experienced machinists. Understanding how flute count affects performance is crucial for selecting the optimal tool for various machining tasks.
 

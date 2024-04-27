@@ -1,9 +1,9 @@
 ---
-title: Cutting Tool Material Guide
+title: Choosing a Cutting Tool: Material Guide
 layout: home
 ---
 
-# Cutting Tool Material Guide
+# Choosing a Cutting Tool: Material Guide
 
 Welcome to our in-depth guide on the materials used for various cutting tools, designed for both novice and experienced machinists. Cutting tools are essential in various machining applications, including milling machines, drilling operations, and lathes. This guide explores the different materials used in the manufacturing of endmills, drills, and other cutting instruments, highlighting their properties, applications, and optimal use scenarios.
 
