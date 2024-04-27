@@ -11,8 +11,9 @@ Understanding the distinctions between High Speed Steel (HSS), Cobalt (HSCO), Po
 
 Whether you are machining soft metals or tackling tough, abrasive materials, this guide will help you navigate the complexities of endmill selection and use, enhancing both your productivity and machining precision.
 
-<details>
-  <summary>Beginners: Only the bare minimum to get you to making chips. Great jumping off point for Students</summary>
+<details markdown=block>
+
+  <summary markdown=span>Beginners: Only the bare minimum to get you to making chips. Great jumping off point for Students</summary>
 
 ## High Speed Steel (HSS)
 
@@ -45,8 +46,9 @@ This material is a composite of carbon and tungsten, forming a highly resistant 
  
  <br>
  
-<details>
-  <summary>Advanced: Everything you need to know and more than you asked for</summary>
+<details markdown=block>
+
+  <summary markdown=span>Advanced: Everything you need to know and more than you asked for</summary>
 
 ## High Speed Steel (HSS)
 
