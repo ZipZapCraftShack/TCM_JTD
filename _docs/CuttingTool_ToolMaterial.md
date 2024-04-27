@@ -147,7 +147,7 @@ This material is a composite of carbon and tungsten, forming a highly resistant 
 
 ### Advantages
 
-- **Hardness and Durability:** Provides the longest tool life.
+- **Hardness:** Hardest material with the sharpest edges.
 - **Longest Tool Life:** Outlasts Cobalt & HSS by 10-20 times reducing cost over the long run.
 - **Efficiency:** Allows higher feed rates and RPM, can run 3 to 5 times faster feed rates and Higher RPM than Cobalt tooling.
 - **High Precision:** Capable of producing fine finishes and precise cuts, especially in tough materials.
