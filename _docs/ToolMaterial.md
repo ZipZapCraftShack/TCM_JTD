@@ -1,3 +1,8 @@
+---
+title: Endmill Tool Material Guide
+layout: home
+---
+
 # Endmill Tool Material Guide
 
 Welcome to our comprehensive guide on endmill tool materials, tailored for both novice and experienced machinists. Endmills are crucial cutting tools used across various machining centers and milling machines to perform operations such as cutting grooves, slots, and profiles into workpieces. This guide delves into the different types of materials used in the manufacturing of endmills, exploring their unique properties, applications, and suitability for different machining tasks.
