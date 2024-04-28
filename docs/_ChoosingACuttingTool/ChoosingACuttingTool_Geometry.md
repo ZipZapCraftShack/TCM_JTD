@@ -1,5 +1,5 @@
 ---
-title: Choosing a Cutting Tool Geometry Guide
+title: Choosing a Cutting Tool - Geometry Guide
 layout: home
 nav_order: 4
 parent: Choosing a Cutting Tool
@@ -16,11 +16,6 @@ End mill geometry includes several design features that directly influence their
 ## Helix Angle
 
 The helix angle is one of the most crucial aspects to consider when selecting an endmill. It affects the cutting efficiency and the finish of the machined surface.
-
-### Common Helix Angles
-- **Low Helix Angles (30° or less):** Ideal for harder materials like cast iron, providing better rigidity and minimizing deflection.
-- **Medium Helix Angles (30° to 45°):** Versatile and suitable for a wide range of materials, balancing between chip evacuation and strength.
-- **High Helix Angles (45° or more):** Best for machining aluminum and other non-ferrous materials, promoting efficient chip evacuation and a smoother finish.
 
 ### Low Helix Angles (30° or less)
 

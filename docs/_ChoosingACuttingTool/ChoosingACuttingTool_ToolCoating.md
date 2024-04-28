@@ -1,5 +1,5 @@
 ---
-title: Choosing a Cutting Tool Cutting Tool Coating Guide
+title: Choosing a Cutting Tool - Cutting Tool Coating Guide
 layout: home
 nav_order: 2
 parent: Choosing a Cutting Tool

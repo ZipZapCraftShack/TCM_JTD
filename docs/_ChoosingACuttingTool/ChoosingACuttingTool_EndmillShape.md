@@ -1,5 +1,5 @@
 ---
-title: Choosing a Cutting Tool Endmill Shape Guide
+title: Choosing a Cutting Tool - Endmill Shape Guide
 layout: home
 nav_order: 5
 parent: Choosing a Cutting Tool

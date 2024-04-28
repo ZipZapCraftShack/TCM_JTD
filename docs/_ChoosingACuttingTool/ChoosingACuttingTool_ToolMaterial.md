@@ -1,5 +1,5 @@
 ---
-title: Choosing a Cutting Tool Cutting Tool Material Guide
+title: Choosing a Cutting Tool - Cutting Tool Material Guide
 layout: home
 nav_order: 1
 parent: Choosing a Cutting Tool
@@ -7,11 +7,11 @@ parent: Choosing a Cutting Tool
 
 # Choosing a Cutting Tool: Cutting Tool Material Guide
 
-Welcome to our in-depth guide on the materials used for various cutting tools, designed for both novice and experienced machinists. Cutting tools are essential in various machining applications, including milling machines, drilling operations, and lathes. This guide explores the different materials used in the manufacturing of endmills, drills, and other cutting instruments, highlighting their properties, applications, and optimal use scenarios.
+Welcome to our comprehensive guide on the materials used for various cutting tools, designed for both novice and experienced machinists. This guide covers essential details about the materials used in the manufacturing of endmills, drills, and other cutting tools, highlighting their properties, applications, and optimal usage scenarios.
 
-Understanding the differences between High Speed Steel (HSS), Cobalt (HSCO), Powdered Metal (PM), and Solid Carbide is crucial for choosing the right tool for your projects. This guide provides detailed insights into the advantages, disadvantages, and best uses for each material type, helping you optimize tool performance and durability. Additionally, we include essential maintenance tips, environmental considerations, and safety practices to ensure efficient and responsible machining practices.
+Understanding the differences between High Speed Steel (HSS), Cobalt (HSCO), Powdered Metal (HSS-PM), and Solid Carbide is crucial for selecting the right tool for your machining projects. This guide provides insights into the advantages, disadvantages, and recommended uses for each material type, helping you optimize tool performance and durability. We also include essential maintenance tips, environmental considerations, and safety practices to ensure efficient and responsible machining.
 
-Whether you're working with soft metals or tough, abrasive materials, this guide will assist you in navigating the complexities of tool selection and application, improving both your productivity and machining precision.
+Whether you're machining soft metals or tough, abrasive materials, this guide will help you navigate the complexities of tool selection and application, enhancing both your productivity and machining precision.
 
 <details markdown=block>
 
@@ -54,32 +54,40 @@ This material is a composite of carbon and tungsten, forming a highly resistant 
 
 ## High Speed Steel (HSS)
 
-Made from a blend of chromium, tungsten, and molybdenum, HSS offers greater hardness, toughness, and durability compared to conventional carbon steel. It is well-suited for both ferrous and nonferrous metals, withstanding higher temperatures and wear during milling operations.
+Made from a blend of chromium, tungsten, and molybdenum, HSS offers greater hardness, toughness, and durability compared to conventional carbon steel. It is well-suited for both ferrous and nonferrous metals, capable of withstanding higher temperatures and wear during milling operations.
 
 ### Advantages
 
 - **Economical:** Cost-effective compared to advanced materials.
 - **Tough and Forgiving:** Ideal for operators with less experience.
 - **Shock Absorbing:** Suitable for less rigid setups.
-- **Versatile:** Works with various materials.
+- **Versatile:** Effective across a variety of materials.
 - **Red Hardness:** Maintains hardness up to 1000°F without significant dulling.
 - **Easy to Resharpen:** Simplifies maintenance and extends tool life.
 
 ### Disadvantages
 
 - **Rust:** May rust when used with coolant and improper storage.
-- **Lower Productivity:** Must use slower feeds and speeds compared to more expensive materials.
+- **Lower Productivity:** Requires slower feeds and speeds compared to more expensive materials.
 
 ### Grades/Types/Compositions
 
-- Grades
-    - **4241**
-        - Common grade available in hardware stores.
-    - **4341**
-        - Offers slightly better wear resistance.
-    - **6542 (M2)**
-        - High molybdenum content for superior strength and heat resistance.
-        - A popular choice for its durability in machining.
+#### HSS-L
+
+- This material is suitable for drilling ordinary metals, such as iron, copper, aluminum alloy, and other low and medium hardness metal, as well as wood, plastic, etc.
+- Not suitable for drilling stainless steel, mold steel, and additional high strength, high hardness metal.
+- **4241:** Common grade available in hardware stores.
+- **4341:** Offers slightly better wear resistance.
+
+#### HSS
+
+- Suitable for drilling various metals including stainless steel, iron, copper, and aluminum alloy.
+- **9341**
+- **6542 (M2):** High molybdenum content for superior strength and heat resistance. Widely used in industrial applications.
+
+#### HSS-E
+
+- **6543:** A vanadium content of 3-4%, much higher wear resistance but will reduce the grinding efficiency, suitable for the manufacture of threaded tools
 
 ### Use Cases
 
@@ -98,14 +106,19 @@ Cobalt endmills, which are HSS tools enhanced with 5-10% cobalt, offer improved 
 
 ### Advantages
 
-- **Harder than plain HSS:** Better heat and wear resistance.
-- **Enhanced Performance:** Offers comprehensive performance enhancements over standard HSS.
-- **Easy to Resharpen.**
+- **Harder than plain HSS:** Offers better heat and wear resistance.
+- **Enhanced Performance:** Provides significant performance enhancements over standard HSS.
+- **Easy to Resharpen:** Maintains performance even after resharpening.
 
 ### Grades/Types/Compositions
 
-- **M35 (Cobalt):** Typically 5% Cobalt.
-- **M42 (Super Cobalt):** Higher Cobalt content (Typically 8%) for increased performance.
+#### M35 (Cobalt)
+
+- Contains 5% cobalt, suitable for drilling a variety of hard metals, such as stainless steel, iron, copper, aluminum alloy, cast iron, 45# steel, and other metals.
+
+#### M42 (Super Cobalt)
+
+- Contains 8% cobalt, offering increased performance and durability in demanding applications.
 
 ### Use Cases
 
@@ -116,9 +129,9 @@ Cobalt endmills, which are HSS tools enhanced with 5-10% cobalt, offer improved 
     - **Nickel Alloys:** Alloys like Inconel are extremely hard to machine due to their high work-hardening rates and high-temperature resilience. Cobalt endmills are effective for these materials due to their enhanced heat and wear resistance.
     - **Cast Irons:** While HSS can also be used for cast irons, cobalt endmills offer longer tool life and improved performance due to their toughness, especially with more abrasive cast irons or those with higher hardness levels.
 
-## Powdered Metal (PM)
+## Powdered Metal (HSS-PM)
 
-Powdered Metal Endmills are made from powdered metals that are pressed and sintered to form the tool. They generally consist of high-speed steel (HSS) materials with additional elements such as cobalt or vanadium to enhance performance. They are particularly valuable for applications involving variable cutting loads and for machining tool steels and hardened steels.
+HSS Powdered Metal Endmills are made from powdered metals that are pressed and sintered to form the tool. They generally consist of HSS with additional elements such as cobalt or vanadium to enhance performance. They are particularly valuable for applications involving variable cutting loads and for machining tool steels and hardened steels.
 
 ### Advantages
 
@@ -126,7 +139,7 @@ Powdered Metal Endmills are made from powdered metals that are pressed and sinte
 
 ### Disadvantages
 
-- **Cost:** More expensive than HSS and Cobalt.
+- **Cost:** Generally more expensive than HSS and Cobalt.
 
 ### Grades/Types/Compositions
 
@@ -149,9 +162,9 @@ This material is a composite of carbon and tungsten, forming a highly resistant 
 
 ### Advantages
 
-- **Hardness:** Hardest material with the sharpest edges.
-- **Longest Tool Life:** Outlasts Cobalt & HSS by 10-20 times reducing cost over the long run.
-- **Efficiency:** Allows higher feed rates and RPM, can run 3 to 5 times faster feed rates and Higher RPM than Cobalt tooling.
+- **Hardness:** Offers the sharpest edges and maintains them under high temperatures.
+- **Longest Tool Life:** Provides significantly longer life, reducing the need for frequent replacement.
+- **Efficiency:** Capable of operating at higher speeds and feeds, enhancing productivity.
 - **High Precision:** Capable of producing fine finishes and precise cuts, especially in tough materials.
 
 ### Disadvantages

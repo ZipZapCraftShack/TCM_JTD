@@ -2,6 +2,8 @@ title: The Crafty Machinist
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
+color_scheme: TCM
+
 url: https://ZipZapCraftShack.github.io/TCM_JTD
 
 aux_links:
@@ -15,6 +17,10 @@ aux_links:
 
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -79,3 +85,17 @@ just_the_docs:
       # Exclude the collection from the search
       # Supports true or false (default)
       search_exclude: false
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  grey-lt:
+    title: Note
+    color: grey-lt
+  yellow:
+    title: Note
+    color: yellow
+  green:
+    title: Note
+    color: green
