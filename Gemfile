@@ -1,7 +1,26 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem "jekyll", "~> 4.3.3" # installed by `gem jekyll`
-# gem "webrick"        # required when using Ruby >= 3 and Jekyll <= 4.2.2
+source "https://rubygems.org"
 
-# gem "just-the-docs", "0.8.2" # pinned to the current release
-gem "just-the-docs"        # always download the latest release
+# gem "rails"
+
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'tzinfo'
+gem 'tzinfo-data'
+gem "webrick"
+
+gem 'kramdown-parser-gfm'
+
+gem 'jekyll'
+
+gem 'jekyll-sass-converter'
+gem 'jekyll-seo-tag'
+gem 'jekyll-remote-theme'
+gem 'jekyll-github-metadata'
+gem 'jekyll-theme-hacker'
+gem 'jekyll-theme-primer'
+gem "jekyll-default-layout"
+
+gem 'just-the-docs'
