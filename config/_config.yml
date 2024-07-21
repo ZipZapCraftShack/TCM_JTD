@@ -58,7 +58,7 @@ paginate_path       : /page:num
 timezone            : America/New_York
 
 quiet               : false
-verbose             : false
+verbose             : true
 defaults            : []
 
 liquid:
@@ -92,7 +92,7 @@ aux_links:
 #logo: "/assets/images/3 Flute.png"
 
 # Set a path/url to a favicon that will be displayed by the browser
-#favicon_ico: "/assets/images/favicon.ico"
+favicon_ico: "/assets/img/favicon.ico"
 
 # Choose a Theme
 theme: just-the-docs
@@ -152,10 +152,6 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
-  MaterialsISO:
-    permalink: "/Materials/"
-    output: true
-
   MachiningOperations:
     permalink: "/:collection/:path/"
     output: true
@@ -183,22 +179,6 @@ just_the_docs:
     Materials:
       # Give the collection a name
       name: Materials
-
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-
-      # Fold the collection in the navigation
-      # Supports true or false (default)
-      nav_fold: false  # note: this option is new in v0.4
-
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
-
-    MaterialsISO:
-      # Give the collection a name
-      name: MaterialsISO
 
       # Exclude the collection from the navigation
       # Supports true or false (default)
