@@ -1,255 +1,312 @@
-# Where things are
-source              : ../src
-destination         : ../_site
+# =============================================================================
+# The Crafty Machinist - Jekyll Configuration
+# =============================================================================
+# Main configuration file for Jekyll site using Just the Docs theme
+# Documentation: https://jekyllrb.com/docs/configuration/
+# Theme docs: https://just-the-docs.github.io/just-the-docs/
+# Last updated: 2025-01-03
+# =============================================================================
 
-# Define Jekyll collections
-collections_dir     : docs
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+# -----------------------------------------------------------------------------
+# Site Structure
+# -----------------------------------------------------------------------------
+# These paths are relative to the location of this config file
+source              : ../src           # Source directory for site content
+destination         : ../_site         # Output directory for built site
+
+# -----------------------------------------------------------------------------
+# Jekyll Directories
+# -----------------------------------------------------------------------------
+# All paths are relative to the source directory
+collections_dir     : docs             # Directory for custom collections
+plugins_dir         : _plugins         # Directory for custom plugins
+layouts_dir         : _layouts         # Directory for layout files
+data_dir            : _data            # Directory for data files (YAML, JSON, CSV)
+includes_dir        : _includes        # Directory for reusable includes
+
+# -----------------------------------------------------------------------------
+# SASS/CSS Settings
+# -----------------------------------------------------------------------------
 sass:
-  style: expanded
-  sass_dir: _sass
-  load_paths:
-    - .
-    - ../config/_sass
-    - ./assets/css
-collections:
-  posts:
-    output          : true
+  style: expanded                      # Output style: expanded for readability
+  sass_dir: _sass                      # Directory for SASS files
+  quiet_deps: true                     # Suppress dependency warnings
+  load_paths:                          # Additional SASS load paths
+    - .                                # Current directory
+    - ../config/_sass                  # Config-specific styles
+    - ./assets/css                     # Asset styles
 
-# Handling Reading
-safe                : false
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
+# -----------------------------------------------------------------------------
+# File Handling
+# -----------------------------------------------------------------------------
+safe                : false            # Allow custom plugins (set true for GitHub Pages)
+include             : [".htaccess"]    # Files to include in build
+exclude             :                  # Files/folders to exclude from build
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+  - LICENSE
+  
+keep_files          : [".git", ".svn"] # Keep version control folders
+encoding            : "utf-8"          # File encoding (UTF-8 recommended)
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md" # Markdown file extensions
+strict_front_matter : false            # Allow files without front matter
 
-# Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
+# -----------------------------------------------------------------------------
+# Content Filtering
+# -----------------------------------------------------------------------------
+show_drafts         : false            # Show draft posts in development
+limit_posts         : 0                # Limit number of posts (0 = no limit)
+future              : false            # Publish future-dated posts
+unpublished         : false            # Show unpublished posts
 
+# -----------------------------------------------------------------------------
 # Plugins
-whitelist           : []
-plugins             : []
+# -----------------------------------------------------------------------------
+# Add plugins as needed for functionality
+# Note: GitHub Pages has a limited set of allowed plugins
+plugins             : []               # Empty array, add as needed
+                                      # Example: [jekyll-feed, jekyll-seo-tag]
 
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
+# -----------------------------------------------------------------------------
+# Markdown/Conversion
+# -----------------------------------------------------------------------------
+markdown            : kramdown         # Markdown processor (GitHub Pages default)
+highlighter         : rouge            # Syntax highlighter (GitHub Pages default)
+lsi                 : false            # Latent Semantic Indexing (disabled for performance)
+excerpt_separator   : "\n\n"           # Excerpt separator for posts
+incremental         : false            # Enable for faster development builds
 
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
+# -----------------------------------------------------------------------------
+# Local Server Settings
+# -----------------------------------------------------------------------------
+detach              : false            # Run server in background
+port                : 4000             # Local server port
+host                : 127.0.0.1        # Local server host (localhost)
+baseurl             : ""               # Base URL (leave blank for root)
+show_dir_listing    : false            # Hide directory listing for security
 
-# Outputting
-permalink           : date
-paginate_path       : /page:num
-timezone            : America/New_York
+# -----------------------------------------------------------------------------
+# Output Settings
+# -----------------------------------------------------------------------------
+permalink           : pretty           # Clean URLs without .html extension
+paginate_path       : /page:num        # Pagination path format
+timezone            : America/New_York # Site timezone (adjust as needed)
 
-quiet               : false
-verbose             : true
-defaults            : []
+quiet               : false            # Show build output
+verbose             : true             # Show detailed build output
 
+# -----------------------------------------------------------------------------
+# Liquid Template Engine
+# -----------------------------------------------------------------------------
 liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
+  error_mode        : warn             # Warn on Liquid errors (don't fail build)
+  strict_filters    : false            # Allow undefined filters
+  strict_variables  : false            # Allow undefined variables
 
-# Markdown Processors
+# -----------------------------------------------------------------------------
+# Kramdown Markdown Processor
+# -----------------------------------------------------------------------------
 kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
+  auto_ids          : true             # Auto-generate header IDs for anchors
+  entity_output     : as_char          # Output entities as characters
+  toc_levels        : [1, 2, 3, 4, 5, 6] # Table of contents heading levels
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo # Smart quote entities
+  input             : GFM              # GitHub Flavored Markdown
+  hard_wrap         : false            # Don't force line breaks
+  footnote_nr       : 1                # Starting footnote number
+  show_warnings     : false            # Hide kramdown warnings
 
-#
-# JTDs
-#
-title: The Crafty Machinist
-description: A starter template for a Jeykll site using the Just the Docs theme!
+# =============================================================================
+# Just the Docs Theme Settings
+# =============================================================================
 
-url: https://ZipZapCraftShack.github.io/TCM_JTD
+# -----------------------------------------------------------------------------
+# Site Information
+# -----------------------------------------------------------------------------
+title               : The Crafty Machinist
+description         : Manufacturing education for K-12 students and hobbyists - from 3D printing to CNC machining
+url                 : https://ZipZapCraftShack.github.io/TCM_JTD
 
+# -----------------------------------------------------------------------------
+# Theme Configuration
+# -----------------------------------------------------------------------------
+theme               : just-the-docs    # Theme name
+color_scheme        : TCM              # Custom color scheme name
+
+# Logo and branding
+#logo               : "/assets/images/3-flute-logo.png"  # Site logo (uncomment to enable)
+favicon_ico         : "/assets/img/favicon.ico"          # Browser favicon
+
+# -----------------------------------------------------------------------------
+# Navigation
+# -----------------------------------------------------------------------------
+# External links in top navigation
 aux_links:
   Store: https://thecraftymachinist.com/
-
-# Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/3 Flute.png"
-
-# Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/assets/img/favicon.ico"
-
-# Choose a Theme
-theme: just-the-docs
-
-# Color scheme supports "light" (default) and "dark"
-#color_scheme: dark
-color_scheme: TCM
-
-
-# Back to top link
-back_to_top: true
-back_to_top_text: "Back to top"
-
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-
-search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
-  heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
-  previews: 3
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
-  preview_words_before: 5
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
-  preview_words_after: 10
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: enable support for hyphenated search words
-  tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
-  rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
-  button: false
-  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
-  focus_shortcut_key: 'k'
   
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
-heading_anchors: true
+# Back to top button configuration
+back_to_top         : true             # Enable back to top button
+back_to_top_text    : "Back to top"    # Button text
 
+# -----------------------------------------------------------------------------
+# Search Configuration
+# -----------------------------------------------------------------------------
+search_enabled      : true             # Enable site search
+
+# Advanced search settings
+search:
+  heading_level     : 2                # Split pages into searchable sections at h2
+  previews          : 3                # Number of previews per search result
+  preview_words_before : 5             # Context words before match in preview
+  preview_words_after  : 10            # Context words after match in preview
+  tokenizer_separator  : /[\s/]+/      # Search token separator regex
+  rel_url           : true             # Display relative URLs in results
+  button            : false            # Hide search button (use keyboard shortcut)
+  focus_shortcut_key: 'k'              # Ctrl/Cmd + K to focus search
+
+# -----------------------------------------------------------------------------
+# Content Features
+# -----------------------------------------------------------------------------
+heading_anchors     : true             # Enable heading anchor links for easy sharing
+
+# -----------------------------------------------------------------------------
+# Collections Configuration
+# -----------------------------------------------------------------------------
+# Define custom collections for organizing content
 collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
   ChoosingACuttingTool:
-    permalink: "/:collection/:path/"
-    output: true
-
+    permalink       : "/:collection/:path/"  # URL structure
+    output          : true                   # Generate pages for documents
+    
   Materials:
-    permalink: "/:collection/:path/"
-    output: true
-
+    permalink       : "/:collection/:path/"
+    output          : true
+    
   MachiningOperations:
-    permalink: "/:collection/:path/"
-    output: true
+    permalink       : "/:collection/:path/"
+    output          : true
 
+# -----------------------------------------------------------------------------
+# Just the Docs Collections Settings
+# -----------------------------------------------------------------------------
+# Theme-specific collection settings
 just_the_docs:
-  # Define which collections are used in just-the-docs
   collections:
-    # Reference the "docs" collection
     ChoosingACuttingTool:
-      # Give the collection a name
-      name: Choosing A Cutting Tool
-
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-
-      # Fold the collection in the navigation
-      # Supports true or false (default)
-      nav_fold: false  # note: this option is new in v0.4
-
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
-
+      name          : Choosing A Cutting Tool  # Display name in navigation
+      nav_exclude   : false                    # Include in navigation
+      nav_fold      : false                    # Don't fold by default
+      search_exclude: false                    # Include in search
+      
     Materials:
-      # Give the collection a name
-      name: Materials
-
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-
-      # Fold the collection in the navigation
-      # Supports true or false (default)
-      nav_fold: false  # note: this option is new in v0.4
-
-      # Exclude the collection from the search
-      # Supports true or false (default)
+      name          : Materials
+      nav_exclude   : false
+      nav_fold      : false
       search_exclude: false
-
+      
     MachiningOperations:
-      # Give the collection a name
-      name: Machining Operations
-
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-
-      # Fold the collection in the navigation
-      # Supports true or false (default)
-      nav_fold: false  # note: this option is new in v0.4
-
-      # Exclude the collection from the search
-      # Supports true or false (default)
+      name          : Machining Operations
+      nav_exclude   : false
+      nav_fold      : false
       search_exclude: false
 
+# -----------------------------------------------------------------------------
+# Default Front Matter
+# -----------------------------------------------------------------------------
+# Set default values for front matter variables
+defaults:
+  # Default for all pages
+  - scope:
+      path          : ""              # Apply to all files
+      type          : "pages"         # Only pages
+    values:
+      layout        : "default"       # Use default layout
+      nav_exclude   : false           # Include in navigation by default
+      search_exclude: false           # Include in search by default
+  
+  # Collection-specific defaults    
+  - scope:
+      path          : ""
+      type          : "ChoosingACuttingTool"
+    values:
+      layout        : "default"
+      parent        : "Choosing A Cutting Tool"  # Set parent for navigation hierarchy
+      
+  - scope:
+      path          : ""
+      type          : "Materials"
+    values:
+      layout        : "default"
+      parent        : "Materials"
+      
+  - scope:
+      path          : ""
+      type          : "MachiningOperations"
+    values:
+      layout        : "default"
+      parent        : "Machining Operations"
+
+# -----------------------------------------------------------------------------
+# Callouts (Admonitions)
+# -----------------------------------------------------------------------------
+# Define custom callout styles for content highlighting
 callouts:
+  # Standard callouts for general use
   warning:
-    title: Warning
-    color: red
-
-  grey-lt:
-    title: Note
-    color: grey-lt
-
-  yellow:
-    title: Note
-    color: yellow
-
-  green:
-    title: Note
-    color: green
-
-  # Material - ISO Callouts
+    title           : Warning
+    color           : red
+    
+  note:
+    title           : Note
+    color           : grey-lt
+    
+  tip:
+    title           : Tip
+    color           : green
+    
+  important:
+    title           : Important
+    color           : yellow
+    
+  # Material ISO Classification Callouts
+  # Used for categorizing materials according to ISO standards
   material-iso-p:
-    title: ISO P (Blue)
-    color: blue
-
+    title           : "ISO P - Steel"
+    color           : blue
+    
   material-iso-m:
-    title: ISO M (Yellow)
-    color: yellow
-
+    title           : "ISO M - Stainless Steel"
+    color           : yellow
+    
   material-iso-k:
-    title: ISO K (Red)
-    color: red
-
+    title           : "ISO K - Cast Iron"
+    color           : red
+    
   material-iso-n:
-    title: ISO N (Green)
-    color: green
-
+    title           : "ISO N - Non-Ferrous"
+    color           : green
+    
   material-iso-s:
-    title: ISO S (Brown)
-    color: callout_brown
-
+    title           : "ISO S - Heat Resistant"
+    color           : purple
+    
   material-iso-h:
-    title: ISO H (Grey)
-    color: callout_grey
-
+    title           : "ISO H - Hardened Steel"
+    color           : grey-dk
+    
   material-iso-other:
-    title: Other (Non-ISO)
-    color: grey-dk
+    title           : "Non-ISO Materials"
+    color           : grey-dk
+
+# =============================================================================
+# End of Configuration
+# =============================================================================
